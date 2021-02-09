@@ -1,0 +1,32 @@
+{
+  "name": "newsapp-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oyinoye/NewsApp-backend.git"
+  },
+  "keywords": [
+    "Node",
+    "ReactNative"
+  ],
+  "author": "Oyin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oyinoye/NewsApp-backend/issues"
+  },
+  "homepage": "https://github.com/Oyinoye/NewsApp-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "multer": "^1.4.2",
+    "sharp": "^0.27.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
