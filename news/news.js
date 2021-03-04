@@ -37,6 +37,15 @@ class News {
         return data.filter(news => delete news.content)
     }
 
+    async searchPosts(query) {
+        try {
+            const data = await this.getAll();
+            return data.filter(news => news.title.toLowerCase().includes(query.toLowerCase()))
+        } catch (error) {
+            console.log('Error while searching post.');
+        }
+    }
+
     async getSingle(id) {
         const data =  JSON.parse(await fs.promises.readFile(this.path));
         return data.find(news => news.id === id);

@@ -7,9 +7,8 @@ app.use(express.static('data/uploads'));
 
 app.use('/api', newsRouter) 
 
+const PORT = process.env.PORT || 5000;
 
-
-app.listen(5000, () => {
-    console.log('Port is listening.')
+app.listen(PORT, () => {
+    console.log(`App is running on port ${PORT}.`);
 });
- 
